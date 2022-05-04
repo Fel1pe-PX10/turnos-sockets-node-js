@@ -14,7 +14,11 @@ const lblEscritorio4 = document.querySelector('#lblEscritorio4');
 const socket = io();
 
 socket.on('estado-actual', (payload, callback) => {
-    console.log(payload);
+    //console.log(payload);
+
+    const audio = new Audio('./audio/new-ticket.mp3');
+    audio.play();
+
     const [ticket1, ticket2, ticket3, ticket4] = payload;
 
     if(lblTicket1){

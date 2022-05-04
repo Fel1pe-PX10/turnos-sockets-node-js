@@ -32,6 +32,4 @@ btnCrear.addEventListener( 'click', () => {
         lblNuevoTicket.innerHTML = ticket;
     });
 
-
-
 });
